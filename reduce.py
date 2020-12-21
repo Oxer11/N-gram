@@ -32,3 +32,12 @@ for line in sys.stdin:
                 print("\t%s\t%d" % (w, c), end="")
             print("")
         dic.clear()
+        tot.clear()
+
+for k in dic.keys():
+    print("%s\t%d" % (k, tot[k]), end="")
+    for w, c in dic[k].items():
+        print("\t%s\t%d" % (w, c), end="")
+    print("")
+dic.clear()
+tot.clear()

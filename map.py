@@ -39,6 +39,12 @@ for line in sys.stdin:
             print("")
         dic.clear()
 
+for k, v in dic.items():
+    print(k, end="")
+    for _k, _v in v.items():
+        print("\t%s\t%d" % (_k, _v), end="")
+    print("")
+dic.clear()
 
 
 
